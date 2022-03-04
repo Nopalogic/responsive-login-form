@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login & Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="slide-btn" onclick="login()">Login</button>
+            <button type="button" class="slide-btn" onclick="signin()">sign in</button>
+        </div>
+        <form id="login" class="form" action="" method="post">
+            <input type="email" class="input-box" placeholder="Email" required>
+            <input type="password" class="input-box" placeholder="Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <form id="signin" class="form" action="" method="post">
+                <input type="text" class="input-box" placeholder="Nama Lengkap" required>
+                <input type="email" class="input-box" placeholder="Email" required>
+                <input type="password" class="input-box" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>I agree</span>
+                <button type="submit" class="submit-btn">Sign In</button>
+            </form>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signin");
+        var z = document.getElementById("btn");
+
+        function signin(){
+            x.style.left = "-450px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+</body>
+</html>
